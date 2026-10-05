@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Skriptpfad</title>
+  <meta name="description" content="Interaktiver JavaScript-Lernpfad als Ergänzung zum Tokenlauf-Kurs: Variablen, Verzweigungen, Funktionen, Arrays/Objekte, JSON und async/await – mit Code-Übungen direkt im Browser.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;600&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <div class="brand">
+      <svg width="30" height="28" viewBox="0 0 30 28" aria-hidden="true">
+        <path d="M11 4 C6 4 6 9 6 12 C6 15 3 14 3 14 C3 14 6 13 6 16 C6 19 6 24 11 24" fill="none" stroke="var(--ink)" stroke-width="2" stroke-linecap="round"/>
+        <path d="M19 4 C24 4 24 9 24 12 C24 15 27 14 27 14 C27 14 24 13 24 16 C24 19 24 24 19 24" fill="none" stroke="var(--ink)" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="15" cy="14" r="2.4" fill="var(--token)"/>
+      </svg>
+      <span class="brand-name">Skriptpfad</span>
+      <span class="brand-sub">JavaScript-Grundlagen für den Tokenlauf-Kurs</span>
+    </div>
+    <div class="progress" aria-live="polite">
+      <span class="progress-text" id="progress-text">…</span>
+      <div class="progress-bar" aria-hidden="true"><span id="progress-fill" style="width:0"></span></div>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="sidebar">Lernpfad</button>
+  </header>
+  <div class="shell">
+    <aside id="sidebar" aria-label="Lernpfad"></aside>
+    <main id="main"></main>
+  </div>
+</div>
+
+<script src="js/inhalte.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
